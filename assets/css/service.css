@@ -1,0 +1,132 @@
+.service-container {
+    max-width: 140rem;
+    width    : 100%;
+    padding  : 5rem 1rem;
+    margin   : auto;
+}
+
+
+/* Service Page css */
+
+.service-left-side {
+    padding-top: 3.5rem;
+}
+
+.service-left-side h3 {
+    font-size: 3rem;
+}
+
+.service-left-side h1 {
+    line-height: 3.3rem;
+    color      : var(--black);
+    font-size  : 4.5rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.service-left-side .one-para {
+    font-size: 2.2rem;
+}
+
+.service-list {
+    padding-top: 3.5rem;
+}
+
+.service-list ul {
+    margin-left : 0;
+    padding-left: 0;
+}
+
+.service-list ul li {
+    list-style-type: none;
+}
+
+.service-list ul li a {
+    text-decoration: none;
+    color          : var(--newsLetterInpuut-color);
+    font-size      : 2.2rem;
+    display        : block;
+    padding        : .6rem 0 .6rem 1rem;
+    transition     : all .3s;
+}
+
+.service-list ul li .active-service {
+    color          : var(--red-color);
+    border-radius  : .6rem;
+    background-clip: padding-box;
+    box-shadow     : 0 .7rem 3.4rem -1rem rgb(0 0 0 / 30%);
+    transition     : all .3s;
+}
+
+.service-property-details {
+    font-size: 2rem;
+}
+
+.service-img-container img {
+    width: 100%;
+}
+
+.service-banner {
+    width           : 100%;
+    height          : auto;
+    padding         : 0;
+    background-color: #fff;
+    border          : .1rem solid #e8e8e8;
+    overflow        : hidden;
+    position        : relative;
+    border-radius   : 1.6rem;
+    background-clip : padding-box;
+    text-align      : left;
+}
+
+.service-link {
+    text-decoration: none;
+    color          : var(--gray-black-color);
+}
+
+.service-link:hover {
+    text-decoration: none;
+    color          : var(--gray-black-color);
+}
+
+.service-details-link {
+    background-color: var(--red-color);
+    color           : #fff;
+    border          : 2px solid var(--red-color);
+    padding         : .7rem 2.5rem;
+    display         : inline-block;
+    margin-top      : 2.5rem;
+    border-radius   : 2.5rem;
+    transition      : all .3s;
+}
+
+.service-details-link:hover {
+    border          : 2px solid var(--red-color);
+    background-color: var(--white-color);
+    color           : var(--red-color);
+    text-decoration : none;
+    transition      : all .3s;
+}
+
+.service-banner img {
+    width: 100%;
+}
+
+.service-section h2 {
+    margin-top : 5rem;
+    font-size  : 5rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.service-section .service-content {
+    padding: 7rem;
+}
+
+.service-section .service-content h6 {
+    font-size: 2.5rem;
+}
+
+
+.serviceCheckbox .form-check {
+    margin-bottom: 3.5rem;
+    padding-left : 2.3rem;
+}

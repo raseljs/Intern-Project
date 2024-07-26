@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastu</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
+
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="autohide navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navbar-wraper">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.svg" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenuBar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img class="w-100" src="assets/images/hamburger.svg" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <hr class="dropdown-divider">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 divider">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="myListings.html">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myListings.html">Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0 ms-lg-5" href="post.html"><button type="button" class="btn btn-dark">post
+                                property <span class="free">Free</span></button></a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="package.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item divider">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0 ms-lg-5" href="javascript:void(0)"><button data-bs-toggle="modal"
+                                data-bs-target="#loginModal" type="button" class="btn btn-outline-dark">log
+                                in</button></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideMenuBar">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body sideNavbar">
+            <ul class="navbar-nav me-auto pb-5 divider">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="myListings.html">Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myListings.html">Rent</a>
+                </li>
+                <li class="nav-item sidebarPadding">
+                    <a class="nav-link p-0 ms-lg-5" href="post.html"><button type="button" class="btn btn-dark">post
+                            property <span class="free">Free</span></button></a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ms-auto mt-4">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="package.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item divider mb-5" style="padding-bottom: 2rem;">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link p-0 ms-lg-5" href="javascript:void(0)"><button data-bs-toggle="modal"
+                            data-bs-target="#loginModal" type="button" class="btn btn-outline-dark sideLoginBtn">log
+                            in</button></a>
+                </li>
+                <li class="nav-item userDropDown">
+                    <a class="nav-link userDropDownBtn" href="javascript:void(0)" role="button">
+                        <img class="navUserImg" src="assets/images/userImg.svg" alt="">
+
+                        <div class="navUserName">Sheehan Rahman <img src="assets/images/arrowDown.svg" alt=""></div>
+                    </a>
+                    <ul class="dropDownContent d-none">
+                        <li class="mobileMenu"><a class="dropdown-item activeLink" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111" fill-rule="evenodd"
+                                        d="M11.386 1.21a1 1 0 011.228 0l9 7A1 1 0 0122 9v11a3 3 0 01-3 3H5a3 3 0 01-3-3V9a1 1 0 01.386-.79l9-7zM4 9.49V20a1 1 0 001 1h14a1 1 0 001-1V9.49l-8-6.223-8 6.222z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#111" fill-rule="evenodd"
+                                        d="M8 12a1 1 0 011-1h6a1 1 0 011 1v10a1 1 0 11-2 0v-9h-4v9a1 1 0 11-2 0V12z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                My Listings
+                            </a></li>
+
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M15.71 12.71a6 6 0 10-7.42 0 10 10 0 00-6.22 8.18 1.006 1.006 0 102 .22 8 8 0 0115.9 0 1 1 0 001 .89h.11a1 1 0 00.88-1.1 10 10 0 00-6.25-8.19zM12 12a4 4 0 110-8 4 4 0 010 8z" />
+                                </svg>
+
+                                My Profile
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M12 13a1.2 1.2 0 00-.796.293.947.947 0 00-.329.707v3c0 .265.118.52.33.707A1.2 1.2 0 0012 18a1.2 1.2 0 00.796-.293.947.947 0 00.329-.707v-3a.947.947 0 00-.33-.707A1.2 1.2 0 0012 13zm5.625-4V7c0-1.326-.593-2.598-1.648-3.536C14.923 2.527 13.492 2 12 2s-2.923.527-3.977 1.464C6.968 4.402 6.375 5.674 6.375 7v2c-.895 0-1.754.316-2.386.879C3.356 10.44 3 11.204 3 12v7c0 .796.356 1.559.989 2.121.632.563 1.49.879 2.386.879h11.25c.895 0 1.754-.316 2.387-.879.632-.562.988-1.325.988-2.121v-7c0-.796-.356-1.559-.988-2.121C19.379 9.316 18.52 9 17.625 9zm-9-2c0-.796.356-1.559.989-2.121C10.246 4.316 11.104 4 12 4c.895 0 1.754.316 2.386.879.633.562.989 1.325.989 2.121v2h-6.75V7zM18.75 19c0 .265-.119.52-.33.707a1.2 1.2 0 01-.795.293H6.375a1.2 1.2 0 01-.795-.293.947.947 0 01-.33-.707v-7c0-.265.119-.52.33-.707A1.2 1.2 0 016.375 11h11.25a1.2 1.2 0 01.796.293c.21.187.329.442.329.707v7z" />
+                                </svg>
+
+                                Change Password
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M20 8.94a1.307 1.307 0 00-.06-.27v-.09a1.07 1.07 0 00-.19-.28l-6-6a1.071 1.071 0 00-.28-.19h-.09a.88.88 0 00-.33-.11H7a3 3 0 00-3 3v14a3 3 0 003 3h10a3 3 0 003-3V9v-.06zm-6-3.53L16.59 8H15a1 1 0 01-1-1V5.41zM18 19a1 1 0 01-1 1H7a1 1 0 01-1-1V5a1 1 0 011-1h5v3a3 3 0 003 3h3v9z" />
+                                </svg>
+
+                                Requested Packages
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M19 6.5h-3v-1a3 3 0 00-3-3h-2a3 3 0 00-3 3v1H5a3 3 0 00-3 3v9a3 3 0 003 3h14a3 3 0 003-3v-9a3 3 0 00-3-3zm-9-1a1 1 0 011-1h2a1 1 0 011 1v1h-4v-1zm10 13a1 1 0 01-1 1H5a1 1 0 01-1-1V13a21.71 21.71 0 008 1.53A21.75 21.75 0 0020 13v5.5zm0-7.69a19.89 19.89 0 01-16 0V9.5a1 1 0 011-1h14a1 1 0 011 1v1.31z" />
+                                </svg>
+
+                                Requested Services
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item nestedMenuParent" href="javascript:void(0)"
+                                role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M7.5 6a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm13.62 4.71l-8.41-8.42A.999.999 0 0012 2H3a1 1 0 00-1 1v9a1 1 0 00.29.71l8.42 8.41a3 3 0 004.24 0L21.12 15a3 3 0 000-4.24v-.05zm-1.41 2.82l-6.18 6.17a1 1 0 01-1.41 0L4 11.59V4h7.59l8.12 8.12a1.001 1.001 0 010 1.41z" />
+                                </svg>
+
+                                Requested Properties
+
+                                <img src="assets/images/arrowDown.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="mobileMenu nestedMenu d-none"><a class="dropdown-item" href="#">
+                                Buy Requests
+                            </a>
+                        </li>
+                        <li class="mobileMenu nestedMenu d-none"><a class="dropdown-item" href="#">
+                                Rent Requests
+                            </a>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M4 12a1 1 0 001 1h7.59l-2.3 2.29a1.002 1.002 0 00.325 1.639 1 1 0 001.095-.219l4-4a1 1 0 00.21-.33 1 1 0 000-.76 1 1 0 00-.21-.33l-4-4a1.003 1.003 0 10-1.42 1.42l2.3 2.29H5a1 1 0 00-1 1zM17 2H7a3 3 0 00-3 3v3a1 1 0 002 0V5a1 1 0 011-1h10a1 1 0 011 1v14a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 10-2 0v3a3 3 0 003 3h10a3 3 0 003-3V5a3 3 0 00-3-3z" />
+                                </svg>
+
+                                Log Out
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content authModalContent">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="sideImage">
+                            <img src="assets/images/modals/image 1.png" alt="">
+                            <div></div>
+                            <img class="modalLogoImg" src="assets/images/modals/bastu logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pt-5 pt-lg-0">
+                        <div class="rightContent">
+                            <h1>Welcome!</h1>
+                            <h6>Log In to your account</h6>
+
+                            <form action="#">
+
+                                <div class="row">
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="+8801883839298">
+                                            <label for="phoneNumber">Your Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-5">
+                                            <input type="password" class="form-control password" placeholder="password">
+                                            <label for="password">Your Password</label>
+                                            <span onclick="passwordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4 d-grid">
+                                        <button class="btn btn-dark">Log In</button>
+                                    </div>
+                                    <div class="col-lg-6 mb-4 d-grid">
+                                        <button class="btn p-1">forgot password?</button>
+                                    </div>
+
+
+                                    <div class="col-12 mt-5 mb-5 haveAccount">
+                                        <p>Don’t have any account?<span data-bs-toggle="modal"
+                                                data-bs-target="#signUpModal">Create one!</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <button class="modalClose" data-bs-toggle="modal">
+                    <img src="assets/images/modals/close icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content authModalContent">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="sideImage">
+                            <img src="assets/images/modals/image 2.png" alt="">
+                            <div></div>
+                            <img class="modalLogoImg" src="assets/images/modals/bastu logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pt-5 pt-lg-0">
+                        <div class="rightContent">
+                            <h1>Welcome!</h1>
+                            <h6>Create your account</h6>
+
+                            <form action="#">
+
+                                <div class="row">
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="demo name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="+8801883839298">
+                                            <label for="phoneNumber">Your Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="password" class="form-control password" placeholder="password">
+                                            <label for="password">Your Password</label>
+                                            <span onclick="passwordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-5">
+                                            <input type="password" class="form-control confirmPassword"
+                                                placeholder="password">
+                                            <label for="password">Confirm Password</label>
+                                            <span onclick="confirmPasswordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mb-4 d-grid">
+                                        <button class="btn btn-dark">Sign up</button>
+                                    </div>
+
+
+
+                                    <div class="col-12 mt-5 mb-5 haveAccount">
+                                        <p>Already have an account? <span data-bs-toggle="modal"
+                                                data-bs-target="#loginModal">log IN!</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <button class="modalClose" data-bs-toggle="modal">
+                    <img src="assets/images/modals/close icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Post Your Requirmenst Modal -->
+    <div class="modal fade" id="postReqModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content postReqModal">
+
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <h2 class="modal-title">Post Your Requirements</h2>
+                    </div>
+                </div>
+
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-6 pe-0 pe-lg-5">
+                            <h6 class="form-title">Personal Info</h6>
+
+                            <div class="row">
+                                <div class="col-12 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="something">
+                                        <label for="yourName">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="phoneNumber">
+                                        <label for="phoneNumber">Your Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="email">
+                                        <label for="email">Your Email (Optional)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-5  authFormInput">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>When do you require the property?</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">When do you require the property?</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-5 authFormInput">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="message"></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ps-0 ps-lg-5">
+                            <h6 class="form-title">Property Info</h6>
+
+                            <div class="row">
+                                <div class="col-6 authFormInput radioInput">
+                                    <label for="property">You’re looking to:</label>
+                                </div>
+
+                                <div class="col-3  authFormInput radioInput">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="buy">
+                                        <label class="form-check-label" for="buy">
+                                            Buy
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3 authFormInput radioInput">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rent">
+                                        <label class="form-check-label" for="rent">
+                                            Rent
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 mb-5  authFormInput">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Property Type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Property Type</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mb-5  authFormInput">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Sub-Type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Sub-Type</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 mb-5  authFormInput">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Preferred City</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Preferred City</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mb-5  authFormInput">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Area</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Area</label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-12 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="flatSize">
+                                        <label for="flatSize">Flat Size (sqft.)</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="priceMin">
+                                        <label for="priceMin">Price (Min)- BDT</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 authFormInput mb-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="priceMax">
+                                        <label for="priceMax">Price (Max)- BDT</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-end">
+                            <button class="btn btn-dark">submit requirement</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <button class="modalClose" data-bs-dismiss="modal">
+                    <img src="assets/images/modals/close icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Main Content -->
+
+    <!-- Hero Section -->
+    <section class="container-fluid heroBgImg">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="heroBox">
+                    <h1>Find Your Home</h1>
+                    <p>We provide platform for property buyers & seller to locate properties of interest on real estate,
+                        to help everyone find their place.</p>
+                </div>
+                <div class="heroSearchBox">
+
+                    <div class="heroPillsTab">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy"
+                                    aria-selected="true">Buy</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent"
+                                    aria-selected="false">Rent</button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="heroPillsContent">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-buy" role="tabpanel"
+                                aria-labelledby="pills-buy-tab">
+
+                                <div class="searchBox">
+                                    <form action="#">
+                                        <div class="row align-items-center">
+
+                                            <div class="heroSearchC col-10 col-lg-8">
+                                                <div class="searchIconGroup">
+                                                    <input type="email" class="form-control searchInput"
+                                                        placeholder="Search for city, area, ZIP...">
+                                                    <img src="assets/images/home/fi_search.svg" alt="Search icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="searchBtnBox mobileSearch col-2 text-end">
+                                                <button onclick="heroFilterAction()" type="button"
+                                                    class="btn searchFilterBtn"><img
+                                                        src="assets/images/home/filter_12 1.svg" alt=""></button>
+
+
+                                            </div>
+
+                                            <div class="heroAction col-12 col-lg-4  ">
+                                                <div class="row">
+                                                    <div
+                                                        class="filterSelect d-none col-12 col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+                                                        <div class="form-floating formSearch">
+                                                            <select id="propertyType" class="form-select searchSelect"
+                                                                aria-label="Floating label select example">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <label for="propertyType">Property Type</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="filterSelect d-none col-12 col-lg-4 mb-5 mb-lg-0 text-center">
+                                                        <div class="form-floating formSearch">
+                                                            <select id="propertySubType"
+                                                                class="form-select searchSelect"
+                                                                aria-label="Floating label select example">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <label for="propertySubType">Property Sub-Type</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="searchBtnBox desktopSearch col-12 col-lg-12">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button onclick="heroFilterAction()" type="button"
+                                                                class="btn searchFilterBtn"><img
+                                                                    src="assets/images/home/filter_12 1.svg"
+                                                                    alt=""></button>
+
+                                                            <a href="myListings.html">
+                                                                <button type="button"
+                                                                    class="btn d-none d-lg-block btn-dark search-btn">search</button>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="filterSelect2 d-none col-12 ">
+                                                <a href="myListings.html">
+                                                    <button type="button"
+                                                        class="btn w-100 d-lg-block btn-dark search-btn">search</button>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
+                                <div class="searchBox">
+                                    <form action="#">
+                                        <div class="row align-items-center">
+
+                                            <div class="heroSearchC col-10 col-lg-8">
+                                                <div class="searchIconGroup">
+                                                    <input type="email" class="form-control searchInput"
+                                                        placeholder="Search for city, area, ZIP...">
+                                                    <img src="assets/images/home/fi_search.svg" alt="Search icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="searchBtnBox mobileSearch col-2 text-end">
+                                                <button onclick="heroFilterAction()" type="button"
+                                                    class="btn searchFilterBtn"><img
+                                                        src="assets/images/home/filter_12 1.svg" alt=""></button>
+
+
+                                            </div>
+
+                                            <div class="heroAction col-12 col-lg-4  ">
+                                                <div class="row">
+                                                    <div
+                                                        class="filterSelect d-none col-12 col-lg-4 mb-5 mb-lg-0 mt-5 mt-lg-0">
+                                                        <div class="form-floating formSearch">
+                                                            <select id="propertyType" class="form-select searchSelect"
+                                                                aria-label="Floating label select example">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <label for="propertyType">Property Type</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="filterSelect d-none col-12 col-lg-4 mb-5 mb-lg-0 text-center">
+                                                        <div class="form-floating formSearch">
+                                                            <select id="propertySubType"
+                                                                class="form-select searchSelect"
+                                                                aria-label="Floating label select example">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <label for="propertySubType">Property Sub-Type</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="searchBtnBox desktopSearch col-12 col-lg-12">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button onclick="heroFilterAction()" type="button"
+                                                                class="btn searchFilterBtn"><img
+                                                                    src="assets/images/home/filter_12 1.svg"
+                                                                    alt=""></button>
+
+                                                            <a href="myListings.html">
+                                                                <button type="button"
+                                                                    class="btn d-none d-lg-block btn-dark search-btn">search</button>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="filterSelect2 d-none col-12 ">
+                                                <a href="myListings.html">
+                                                    <button type="button"
+                                                        class="btn w-100 d-lg-block btn-dark search-btn">search</button>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Onestop property solution -->
+    <section class="container-fluid onestopSolution">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="sectionTitle">One Stop Property Solution</h1>
+                <!-- <p class="sectionDescription">We provide platform for property buyers & seller to locate properties of
+                    interest on real estate, to
+                    help everyone find their place.</p> -->
+            </div>
+        </div>
+
+        <div class="section-container onestopCardSec">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col">
+                    <div class="card propertySoulCard h-100">
+                        <div class="card-body">
+                            <h2>
+                                Buy/Sell/Rent <br>
+                                for Free
+                            </h2>
+
+                            <img src="assets/images/home/illustration 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card propertySoulCard h-100">
+                        <div class="card-body">
+                            <h2>
+                                Property Management <br>
+                                Service On Demand
+                            </h2>
+
+                            <img src="assets/images/home/illustration 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card propertySoulCard h-100">
+                        <div class="card-body">
+                            <h2>
+                                Verified <br>
+                                Listing Agent
+                            </h2>
+
+                            <img src="assets/images/home/illustration 3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Properties Categories -->
+
+    <section class="container-fluid carouselPadding" style="background-color: var(--sectionBg);">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-12" style="margin-bottom: 5.3rem;">
+                    <h1 class="sectionTitle">Featured Properties</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Property Carousel -->
+                    <div class="owl-carousel propertyCarousel owl-theme">
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 1.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka,Gulshan
+                                        1, Dhaka,Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                        <li>2300 sqft.</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 2.png" class="card-img-top" alt="...">
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka,Gulshan
+                                        1, Dhaka,Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Rent</h6>
+                                    <h2>Tk. 35,000 /month</h2>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 3.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center" style="margin-top: 3.8rem; margin-bottom: 7.4rem;">
+                    <button class="btn btn-outline-dark">View all</button>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12" style="margin-bottom: 5.3rem;">
+                    <h1 class="sectionTitle">Top Properties</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Property Carousel -->
+                    <div class="owl-carousel propertyCarousel owl-theme">
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 1.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 2.png" class="card-img-top" alt="...">
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Rent</h6>
+                                    <h2>Tk. 35,000 /month</h2>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 3.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center" style="margin-top: 3.8rem; margin-bottom: 7.4rem;">
+                    <button class="btn btn-outline-dark">View all</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="margin-bottom: 5.3rem;">
+                    <h1 class="sectionTitle">Latest Properties</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Property Carousel -->
+                    <div class="owl-carousel propertyCarousel owl-theme">
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 1.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 2.png" class="card-img-top" alt="...">
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+
+                                    <h6>For Rent</h6>
+                                    <h2>Tk. 35,000 /month</h2>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="propertiesDetails.html">
+                            <div class="card propertyCard">
+                                <img src="assets/images/home/property image 3.png" class="card-img-top" alt="...">
+
+                                <!-- tag -->
+                                <div class="propertyTag">
+                                    <span>verified</span>
+                                </div>
+
+                                <div class="card-body propertyCardbody">
+                                    <h1>Luxurious Apartment</h1>
+                                    <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+                                    <ul>
+                                        <li>4 Bed</li>
+                                        <li>5 Bath</li>
+                                        <li>2300 sqft.</li>
+                                    </ul>
+                                    <h6>For Sale</h6>
+                                    <h2>Tk. 2,00,00,000</h2>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center" style="margin-top: 3.8rem;">
+                    <button class="btn btn-outline-dark">View all</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Luxury and looking Section -->
+    <section class="container-fluid">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="sectionTitle">Property That Defines <br>
+                        A New Dimension Of Luxury</h1>
+                </div>
+            </div>
+            <div class="row align-items-center" style="margin-top: 6.3rem;">
+                <div class="col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
+                    <div class="propertyCardbody luxuryBox m-auto me-lg-auto ms-lg-0">
+                        <h1>Luxurious Apartment</h1>
+                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                        <ul>
+                            <li>4 Bed</li>
+                            <li>5 Bath</li>
+                            <li>2300 sqft.</li>
+                        </ul>
+
+                        <p class="description">
+                            Massive windows, coffered ceilings, built-in bar, chefs kitchen with double oven and 5
+                            burner gas range, custom vent hood, site-finished hardwoods throughout the entire home
+                            except for 3 bedrooms, en-suite bathrooms in every bedroom.
+                        </p>
+
+                        <div class="row align-items-end">
+                            <div class="col-12 col-md-6">
+                                <h6>For Sale</h6>
+                                <h2>Tk. 2,00,00,000</h2>
+                            </div>
+                            <div class="col-12 col-md-6 mt-5 mt-md-0">
+                                <button class="btn btn-dark w-100">buy now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img class="w-100" style="border-radius: 1.6rem;" src="assets/images/home/luxury image.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-container">
+            <div class="lookingCont">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img class="w-100" src="assets/images/home/what are you looking for-image.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="lookingContent">
+                            <h3>What are you looking for?</h3>
+                            <p>Bastu helps you sell your home faster and for more money by covering the cost of home
+                                improvement services — no upfront fees or interest charged.</p>
+
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#postReqModal">Post
+                                your requirement</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Customer Carousel -->
+    <section class="container-fluid carouselPadding" style="background-color: var(--sectionBg)">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-12" style="margin-bottom: 7.2rem;">
+                    <h1 class="sectionTitle">What Our Customers <br>
+                        Say About Us</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Testmonial Card -->
+                    <div class="owl-carousel testmonialCarousel owl-theme ">
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 1.png" alt=""></div>
+                                <div>
+                                    <h5>Sheehan Rahman</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 2.png" alt=""></div>
+                                <div>
+                                    <h5>Shaon Minhaj</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card testmonialCard">
+                            <img class="quoteIcon" src="assets/images/home/quote icon.svg" alt="">
+                            <p>They promised was it delivered. There is a minor Communication issues. Being not
+                                communicated timely. The experience was really fun and rewarding. I would definitey
+                                recommend to everyone.</p>
+
+                            <div class="testmonialUser">
+                                <div><img src="assets/images/home/testimonial image 3.png" alt=""></div>
+                                <div>
+                                    <h5>Anan Meem</h5>
+                                    <h6>Happy Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="container-fluid" style="background-color: #1E1E1E;">
+        <div class="custom-container footer-container">
+            <div class="row align-items-center" style="border-bottom: 1px solid rgb(255, 255, 255,0.12);
+            ">
+                <div class="col-sm-6 col-lg-3 footer-logo">
+                    <img class="logo" src="assets/images/home/bastu logo white.svg" alt="">
+                    <div class="social-link">
+                        <a href="#">
+                            <img src="assets/images/home/002-facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/home/001-instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/home/003-twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 aditionalLink">
+                    <h6>Customer Service</h6>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 aditionalLink">
+                    <h6>COMPANY</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3 aditionalLink">
+                    <h6>CONTACT INFO</h6>
+                    <ul>
+                        <li><a href="#"><img src="assets/images/home/phone-alt-solid 1.svg" alt=""> +8809613823343,</a>
+                        <li><a href="#" style="padding-left: 21px;"> +8801678133343</a>
+                        </li>
+                        <li> <a href="#"><img src="assets/images/home/envelope-open-text-solid 1.svg" alt="">
+                                info@bastu.com.bd</a></li>
+                        <li><a href="#"><img src="assets/images/home/map-marker-alt-solid 1.svg" alt=""> Dhanmondi,
+                                Dhaka-1209</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        ©
+                        Copyright 2020 - 2021
+                        <span class="dot"></span>
+                        All rights reserved by Bastu
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap -->
+    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- owlCarousel -->
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/style.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".propertyCarousel").owlCarousel({
+                items: 3,
+                margin: 16,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 2,
+                        center: true,
+                        loop: true,
+                        autoWidth: true,
+                        margin: 8,
+                    },
+                    800: {
+                        items: 3,
+                    }
+
+                }
+            });
+
+
+
+
+            $(".testmonialCarousel").owlCarousel({
+                items: 3,
+                margin: 16,
+                dots: false,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        center: true,
+                        loop: true,
+                        nav: false,
+                        autoWidth: true,
+                        nav: false,
+                    },
+                    800: {
+                        items: 3,
+                    }
+
+                }
+            });
+
+
+
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

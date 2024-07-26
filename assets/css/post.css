@@ -1,0 +1,818 @@
+.post-container {
+    padding-top   : 7.2rem;
+    padding-bottom: 16.5rem;
+    padding-right : 1rem;
+    padding-left  : 1rem;
+    max-width     : 140rem;
+    width         : 100%;
+    margin        : auto;
+}
+
+
+.postUser img {
+    height       : 14.4rem;
+    width        : 14.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+}
+
+.postUser h3 {
+    font-weight  : bold;
+    font-size    : 2.8rem;
+    line-height  : 3.4rem;
+    color        : var(--black);
+    margin-bottom: 4.8rem;
+}
+
+
+.postSideBtn .nav-link {
+    text-align   : left;
+    font-weight  : 500;
+    font-size    : 1.8rem;
+    line-height  : 2.2rem;
+    color        : var(--gray4);
+    margin-bottom: 3.2rem;
+}
+
+.postSideBtn .nav-link svg {
+    height      : 2.4rem;
+    width       : 2.4rem;
+    margin-top  : -.7rem;
+    margin-right: 1.6rem;
+}
+
+
+.postSideBtn .nav-link svg path {
+    fill: var(--gray4);
+}
+
+
+.postSideBtn .nav-link.active {
+    font-weight     : 600;
+    color           : var(--black);
+    background-color: transparent;
+}
+
+
+.postSideBtn .nav-link.active path {
+    fill: var(--black);
+}
+
+
+
+/* My Listing  */
+.listingTitle {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size  : 4.8rem;
+    line-height: 6.6rem;
+    color      : var(--black);
+}
+
+
+.addListingBtn svg {
+    height    : 2.4rem;
+    width     : 2.4rem;
+    margin-top: -.5rem;
+}
+
+.addListingBtn:hover svg path {
+    stroke: var(--white);
+}
+
+.linstingHeader {
+    padding-bottom: 5.6rem;
+}
+
+.postPropCard img {
+    max-height: 29.7rem;
+}
+
+
+.postPropCard .card-body {
+    padding: 2rem 2.4rem 2.8rem 2.4rem;
+}
+
+
+.postPropCard h1 {
+    font-size    : 1.8rem;
+    margin-bottom: .2rem;
+}
+
+.postPropCard p {
+    font-size  : 1.6rem;
+    line-height: 1.9rem;
+}
+
+.postPropCard ul {
+    padding: 1.6rem 0;
+}
+
+
+.postPropCard ul li {
+    padding-right: 2rem;
+}
+
+.postPropCard h6 {
+    margin-top: 1.6rem;
+}
+
+
+.postPropCard h2 {
+    font-size     : 1.7rem;
+    line-height   : 2.1rem;
+    letter-spacing: -0.03em;
+}
+
+.propStatus span {
+    display         : inline-block;
+    position        : absolute;
+    right           : 1.2rem;
+    top             : 1.2rem;
+    background-color: var(--white);
+    border-radius   : .4rem;
+    font-weight     : 600;
+    font-size       : 1.6rem;
+    line-height     : 1.9rem;
+    text-transform  : uppercase;
+    letter-spacing  : 0.05em;
+    color           : var(--black);
+    padding         : .4rem .8rem;
+}
+
+
+.propStatus span img {
+    height    : 2rem;
+    width     : 2rem;
+    margin-top: -.4rem;
+}
+
+
+.inactiveCard img,
+.inactiveCard .card-body {
+    opacity: .35;
+}
+
+.postUserInfo {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 6.4rem;
+}
+
+.postUserInfo img {
+    height       : 18.4rem;
+    width        : 18.4rem;
+    border-radius: 50%;
+    margin-right : 8.4rem;
+}
+
+
+
+
+
+
+/* Data Table Design Override */
+.dataTables_wrapper .dataTables_length {
+    font-size    : 2rem;
+    line-height  : 2.4rem;
+    font-weight  : bold;
+    margin-bottom: 3.2rem;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    font-weight     : normal;
+    font-size       : 1.7rem;
+    line-height     : 2.4rem;
+    padding         : 1.5rem 2.4rem;
+    background-color: var(--white);
+    color           : var(--gray1);
+    max-width       : 17.9rem;
+    border          : 2px solid var(--gray2);
+    border-radius   : 1rem;
+}
+
+
+
+.dataTables_wrapper .dataTables_filter {
+    font-weight  : normal;
+    font-size    : 1.7rem;
+    line-height  : 2.4rem;
+    color        : var(--gray1);
+    margin-bottom: 3.2rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    padding         : 1.5rem 2.4rem;
+    border          : 2px solid var(--gray2);
+    border-radius   : 1rem;
+    background-color: var(--white);
+
+}
+
+table.dataTable td.dataTables_empty {
+    font-size: 1.6rem;
+    color    : var(--black);
+}
+
+.customTableDesign {
+    background-color: var(--white);
+    border-radius   : 1.6rem;
+    padding         : 4.2rem 3.2rem;
+    border-bottom   : none !important;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc {
+    background-image: none !important;
+}
+
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding       : 0 0 1.2rem 0;
+    border-bottom : none;
+    font-weight   : bold;
+    font-size     : 1.6rem;
+    line-height   : 1.9rem;
+    color         : var(--black);
+    letter-spacing: -0.02em;
+    text-align    : left;
+}
+
+table.dataTable thead th:nth-child(6),
+table.dataTable tbody td:nth-child(6) {
+    text-align: center;
+}
+
+
+.dataTables_empty {
+    border-bottom: none;
+}
+
+
+.customTableDesign tbody tr {
+    border-bottom: 1px solid var(--gray2);
+}
+
+
+
+.customTableDesign tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+table.dataTable tbody td {
+    font-weight   : 500;
+    font-size     : 1.6rem;
+    line-height   : 1.9rem;
+    color         : var(--gray1);
+    letter-spacing: -0.02em;
+    padding       : 3rem .8rem 3rem 0;
+    vertical-align: middle;
+
+}
+
+/* .table-responsive thead td:nth-child(4) {
+    text-align: center !important;
+} */
+
+.acceptStat {
+    display       : inline-block;
+    font-weight   : 500;
+    font-size     : 1.4rem;
+    line-height   : 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color         : var(--green1);
+    padding       : .6rem 1rem .6rem .6rem;
+    background    : rgba(33, 150, 83, 0.05);
+    border-radius : .4rem;
+    min-width     : 11.8rem;
+    text-align    : center;
+
+}
+
+.acceptStat img {
+    height    : 1.6rem;
+    width     : 1.6rem;
+    margin-top: -.5rem;
+}
+
+.pendingStat {
+    display       : inline-block;
+    font-weight   : 500;
+    font-size     : 1.4rem;
+    line-height   : 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color         : var(--orange);
+    padding       : .6rem 1rem .6rem .6rem;
+    background    : rgba(242, 153, 74, 0.05);
+    border-radius : .4rem;
+    min-width     : 11.8rem;
+    text-align    : center;
+}
+
+.pendingStat img {
+    height    : 1.6rem;
+    width     : 1.6rem;
+    margin-top: -.5rem;
+}
+
+
+.trashBtn {
+    background   : rgba(235, 87, 87, 0.1);
+    border-radius: .6rem;
+    padding      : 1.2rem;
+    border       : none;
+}
+
+.trashBtn img {
+    height: 2.4rem;
+    width : 2.4rem;
+}
+
+
+.dataTables_info,
+.dataTables_paginate {
+    margin-top: 3rem;
+    font-size : 1.8rem;
+}
+
+
+.postSideBtn .nav-link .arrowIcon {
+    width     : 1.4rem;
+    height    : .8rem;
+    margin-top: 0;
+}
+
+
+.reqPropExpand {
+    padding-left: 10rem;
+}
+
+
+/* Post Multistep form */
+.progressCounter h6 {
+    font-weight  : 500;
+    font-size    : 2rem;
+    line-height  : 2.4rem;
+    color        : var(--gray1);
+    margin-bottom: 1.6rem;
+}
+
+.formProgress {
+    height          : .2rem;
+    margin-bottom   : 2.4rem;
+    background-color: var(--gray2);
+}
+
+
+.form-title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size  : 4.2rem;
+    line-height: 5rem;
+    color      : var(--black);
+}
+
+
+.post-map #postMap {
+    height       : 41.8rem;
+    width        : 100%;
+    border-radius: 1.6rem;
+    border       : 2px solid var(--gray2);
+    margin-bottom: 2.4rem;
+
+}
+
+.ownerTitle {
+    font-weight: 500;
+    font-size  : 1.8rem;
+    line-height: 2.4rem;
+    color      : var(--black);
+}
+
+.form-check .form-check-input {
+    float       : left;
+    margin-left : -1.4rem;
+    margin-right: .8rem;
+}
+
+.alignRadio .form-check {
+    margin-right: 3rem;
+}
+
+.alignRadio .form-check:last-child {
+    margin-right : 0;
+    margin-bottom: 0;
+}
+
+.invalid-feedback {
+    font-size: 1.7rem;
+}
+
+
+
+.feature-title {
+    font-weight: bold;
+    font-size  : 2rem;
+    line-height: 3.4rem;
+    color      : var(--black);
+}
+
+.form-check-input:checked~label {
+    font-weight: 500;
+    color      : var(--black);
+}
+
+
+
+.featuresInpGroup {
+    border       : .2rem solid var(--gray2);
+    border-radius: 8px;
+}
+
+.featuresInpGroup button {
+    padding         : 2.4rem 1.6rem;
+    border          : none;
+    background-color: transparent;
+}
+
+.featuresInpGroup input {
+    text-align      : center;
+    background-color: transparent;
+    border          : none;
+    font-weight     : bold;
+    line-height     : 2.6rem;
+    font-size       : 2rem;
+    color           : var(--black);
+    padding         : 0 !important;
+}
+
+.featuresInpGroup input:focus {
+    background-color: transparent;
+    box-shadow      : none !important;
+    border          : none !important;
+}
+
+.featuresInpGroup button img {
+    height: 2.4rem;
+    width : 2.4rem;
+}
+
+.form-control[readonly] {
+    background-color: transparent;
+    border          : none;
+}
+
+
+.propFea {
+    /* min-height: 7.2rem; */
+    padding-top   : 3.6rem;
+    padding-bottom: 3.6rem;
+}
+
+.propAmen {
+    padding-top   : 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+
+.visuallyHiddenFile {
+    border  : 0;
+    clip    : rect(0 0 0 0);
+    height  : 1px;
+    margin  : -1px;
+    overflow: hidden;
+    padding : 0;
+    position: absolute;
+    width   : 1px;
+}
+
+
+.parentThumbContainer {
+    height             : 26.1rem;
+    max-width          : 41.2rem;
+    width              : 100%;
+    /* background-color: var(--white); */
+    border             : 2px dashed var(--gray3);
+    border-radius      : 1.2rem;
+    cursor             : pointer;
+    overflow           : hidden;
+    position           : relative;
+}
+
+.inputContainer {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+    height  : 100%;
+    width   : 100%;
+}
+
+.inputContainer img {
+    height         : 100%;
+    width          : 100%;
+    object-fit     : cover;
+    object-position: center center;
+}
+
+
+.uploadMessage {
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    bottom         : 0;
+    right          : 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.uploadMessage img {
+    height: 4rem;
+    width : 4rem;
+}
+
+.uploadMessage p {
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 2.8rem;
+    text-align : center;
+    color      : var(--black);
+}
+
+
+
+.changeImg {
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility      : hidden;
+    transition      : .1s;
+}
+
+
+.parentThumbContainer:hover .changeImg {
+    visibility: visible;
+}
+
+
+.changeImg p {
+    color: white;
+}
+
+.removeMessage {
+    position: absolute;
+    top     : 1rem;
+    right   : 1rem;
+
+}
+
+.removeMessage button {
+    border       : none;
+    background   : rgba(235, 87, 87, 0.1);
+    border-radius: .6rem;
+    padding      : 1.2rem;
+}
+
+
+.removeMessage button img {
+    height: 2.4rem;
+    width : 2.4rem;
+}
+
+
+
+/* Multiupload File */
+.multiParentCont {
+    height   : 21.4rem;
+    max-width: 29.6rem;
+    width    : 100%;
+    overflow : hidden;
+    position : relative;
+
+}
+
+.addContainer {
+    /* background-color: var(--white); */
+    position     : absolute;
+    top          : 0;
+    bottom       : 0;
+    left         : 0;
+    right        : 0;
+    height       : 100%;
+    width        : 100%;
+    border       : 2px dashed var(--gray3);
+    border-radius: 1.2rem;
+    cursor       : pointer;
+    overflow     : hidden;
+}
+
+.previewImg {
+    width : 100%;
+    height: 100%;
+}
+
+.upMesg {
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    bottom         : 0;
+    right          : 0;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.upMesg img {
+    height: 3.2rem;
+    width : 3.2rem;
+}
+
+.upMesg p {
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 2.8rem;
+    color      : var(--black);
+    margin-top : .5rem;
+}
+
+.delMessage {
+    position  : absolute;
+    top       : .8rem;
+    right     : .7rem;
+    visibility: hidden;
+}
+
+
+.delMessage button {
+    border    : none;
+    background: transparent;
+    padding   : .3rem;
+}
+
+
+.delMessage button img {
+    height: 2.4rem;
+    width : 2.4rem;
+}
+
+
+.imageTypeSel {
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    bottom            : 0;
+    right             : 0;
+    background        : linear-gradient(0deg, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8));
+    border-radius     : 12px;
+    display           : flex;
+    align-items       : center;
+    justify-content   : center;
+    /* visibility     : hidden; */
+}
+
+
+.imageTypeSel>div {
+    max-width: 22.3rem;
+    width    : 100%;
+}
+
+.imageTypeSel select {
+    font-weight     : normal;
+    font-size       : 1.7rem;
+    line-height     : 2.4rem;
+    color           : var(--gray2);
+    background-color: transparent;
+    padding         : 2.4rem;
+    border          : 2px solid var(--gray2);
+    border-radius   : 1rem;
+    background-image: url('../images/icon//fi_chevron-down\ \(1\).svg');
+    background-size : 2rem;
+
+}
+
+.imageTypeSel select option {
+    background-color: var(--black);
+}
+
+.imageTypeSel .form-select.is-valid {
+    border-color: var(--gray2);
+
+}
+
+.imageTypeSel .form-select.is-valid:not([multiple]):not([size]) {
+    background-image: url('../images/icon//fi_chevron-down\ \(1\).svg');
+    background-size : 2rem;
+
+}
+
+.imageSecondSel {
+    visibility: hidden;
+}
+
+
+.multiParentCont:hover .imageSecondSel,
+.multiParentCont:hover .delMessage {
+    visibility: visible;
+}
+
+
+
+.tkIconContainer {
+    position: relative;
+}
+
+
+.tkIconContainer>label {
+    padding-left: 5.4rem;
+}
+
+.tkIconContainer .form-control {
+    padding-left: 4.6rem;
+}
+
+.tkIconContainer img {
+    position: absolute;
+    top     : 2.8rem;
+    left    : 2.6rem;
+    height  : 1.6rem;
+    width   : 1.6rem;
+}
+
+
+.mobileBtn {
+    display: none;
+}
+
+
+.termsCond {
+    text-decoration: underline;
+    cursor         : pointer;
+}
+
+.terms-condition {
+    margin-bottom: 5.5rem;
+}
+
+.terms-condition h3 {
+    font-weight: bold;
+    font-size  : 2rem;
+    line-height: 3.4rem;
+    color      : var(--black);
+}
+
+.terms-condition p {
+    font-weight: normal;
+    font-size  : 1.8rem;
+    line-height: 3.4rem;
+    color      : var(--gray1);
+}
+
+
+
+@media (max-width: 991.98px) {
+
+    .postSideLink {
+        display: none;
+    }
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .mobileBtn {
+        display: block;
+    }
+
+    .desktopBtn {
+        display: none;
+    }
+
+}
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .cancelSavebtn button {
+        width: 100%;
+    }
+
+
+    .postUserInfo img {
+        margin-right: 2rem;
+    }
+
+
+    /* 
+    .linstingHeader h1 {
+        text-align   : center;
+        margin-bottom: 2.4rem;
+    } */
+
+}

@@ -1,0 +1,135 @@
+.package-container {
+    max-width: 140rem;
+    width    : 100%;
+    padding  : 5rem 1rem;
+    margin   : auto;
+}
+
+.package-subTitle {
+    font-size  : 3.6rem;
+    line-height: 7rem;
+    color      : var(--black);
+    text-align : center;
+    font-weight: normal;
+}
+
+
+
+.package-card-update {
+    background-color: var(--white);
+    border-radius   : 2rem;
+    filter          : drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05));
+    max-width       : 39.8rem;
+    margin          : auto;
+    border          : none;
+}
+
+
+
+.package-card-update .card-footer {
+    background-color: transparent;
+    padding-left    : 5.6rem;
+    padding-right   : 5.6rem;
+    padding-bottom  : 4.6rem;
+}
+
+.package-card-update h5 {
+    font-size  : 2.4rem;
+    font-weight: bold;
+    line-height: 4.8rem;
+    color      : var(--black);
+}
+
+.package-card-update h3 {
+    font-size     : 4.8rem;
+    font-weight   : 600;
+    line-height   : 4.5rem;
+    color         : var(--black);
+    padding-top   : 4.8rem;
+    padding-bottom: 4.8rem;
+    font-family   : 'DM Serif Display', serif;
+}
+
+.package-card-update .tk-font {
+    font-weight: 400;
+}
+
+.package-card-update .details {
+    padding-top: 2.5rem;
+
+}
+
+
+.package-card-update .details p {
+    font-size    : 1.8rem;
+    font-weight  : 400;
+    line-height  : 2.5rem;
+    color        : var(--black);
+    margin-bottom: 1.7rem;
+}
+
+
+
+
+
+.requestPackageBox {
+    padding: 5.6rem;
+}
+
+.requestPackageBox h1 {
+    font-size   : 4.8rem;
+    font-weight : bold;
+    line-height : 5.2rem;
+    color       : var(--black);
+    padding-left: 0;
+}
+
+.priceTitle {
+    font-size  : 2.4rem;
+    font-weight: 400;
+    line-height: 7rem;
+    color      : var(--black);
+}
+
+.requestPackageBox h3 {
+    font-size  : 4rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+    color      : var(--black);
+}
+
+.requestPackageBox .tk-font {
+    font-weight: 400;
+}
+
+.packageBorder::after {
+    content         : '';
+    height          : 1px;
+    width           : 96%;
+    background-color: #707070;
+    margin          : 3rem auto;
+}
+
+.facilitiesList h6 {
+    font-size  : 2.2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color      : var(--black);
+}
+
+.facilitiesList ul {
+    list-style-type: disc;
+}
+
+
+.facilitiesList ul li {
+    font-size  : 1.8rem;
+    font-weight: 400;
+    color      : var(--black);
+    padding-top: 1rem;
+}
+
+.form-check-input:checked+label {
+    opacity: 1;
+    color  : var(--black);
+}

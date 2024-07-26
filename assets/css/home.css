@@ -1,0 +1,452 @@
+.heroBgImg {
+    background-image   : url('../images/home/hero-img.svg');
+    height             : calc(100vh - 118px);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+
+.heroBgImg>div {
+    height: inherit;
+}
+
+
+.heroBox {
+    max-width: 69.9rem;
+    width    : 100%;
+    margin   : auto;
+}
+
+.heroBox h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size  : 7.2rem;
+    line-height: 9.9rem;
+    text-align : center;
+    color      : var(--white);
+}
+
+
+.heroBox p {
+    font-weight: normal;
+    font-size  : 2rem;
+    line-height: 3.4rem;
+    text-align : center;
+    color      : var(--gray3);
+}
+
+.heroPillsTab {
+    max-width: 23rem;
+    margin   : auto;
+}
+
+.heroPillsTab .nav-pills .nav-link {
+    background-color: var(--gray4);
+    padding         : 1.6rem 3.2rem;
+    border-radius   : 8px 8px 0px 0px;
+    font-weight     : 500;
+    font-size       : 1.8rem;
+    line-height     : 2.2rem;
+    color           : var(--white);
+}
+
+.heroPillsTab .nav-pills .nav-link:first-child {
+    margin-right: .1rem;
+}
+
+.heroPillsTab .nav-pills .nav-link:last-child {
+    margin-left: .1rem;
+}
+
+
+.heroPillsTab .nav-pills .nav-link.active {
+    background-color: var(--white);
+    color           : var(--black);
+    font-weight     : bold;
+}
+
+.heroPillsContent {
+    text-align: center;
+}
+
+.searchBox {
+    background-color: var(--white);
+    max-width       : 81.4rem;
+    width           : 100%;
+    margin          : auto;
+    border          : 1px solid var(--gray2);
+    border-radius   : 12px;
+    overflow        : hidden;
+    padding         : 1.6rem;
+    transition      : .2s;
+}
+
+.searchInput {
+    padding    : 2.4rem 2.9rem;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 2.4rem;
+    color      : var(--gray1);
+    border     : none;
+}
+
+
+.searchIconGroup::after {
+    content         : '';
+    position        : absolute;
+    right           : -10px;
+    top             : 0;
+    bottom          : 0;
+    margin          : auto;
+    height          : 4rem;
+    width           : .2rem;
+    background-color: var(--gray2);
+}
+
+
+.search-btn {
+    padding: 2.4rem 5.2rem !important;
+}
+
+.searchIconGroup {
+    position: relative;
+}
+
+.searchIconGroup img {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    margin  : auto;
+    height  : 2.4rem;
+    width   : 2.4rem;
+}
+
+.searchFilterBtn img {
+    height: 2.8rem;
+    width : 2.8rem;
+}
+
+
+
+.heroSearchBox {
+    margin-top: 7.2rem;
+}
+
+
+
+
+/* Onestop property solution */
+
+.onestopSolution {
+    padding-top   : 12.9rem;
+    padding-bottom: 21.7rem;
+}
+
+
+
+
+
+.section-container {
+    padding-left : 1rem;
+    padding-right: 1rem;
+    max-width    : 139rem;
+    margin       : auto;
+}
+
+.onestopCardSec {
+    padding-top: 10.4rem;
+}
+
+.propertySoulCard {
+    background-color: var(--white);
+    border          : 1px solid var(--gray2);
+    border-radius   : 2.4rem;
+    position        : relative;
+    min-height      : 46.6rem;
+}
+
+.propertySoulCard .card-body {
+    padding: 5.1rem 3.3rem 0 3.3rem;
+}
+
+.propertySoulCard h2 {
+    font-family  : 'DM Serif Display', serif;
+    font-weight  : normal;
+    font-size    : 3rem;
+    line-height  : 3.6rem;
+    text-align   : center;
+    color        : var(--black);
+    margin-bottom: 1.7rem;
+}
+
+.propertySoulCard img {
+    width    : 100%;
+    max-width: 36.5rem;
+    position : absolute;
+    bottom   : 0;
+    right    : 0;
+    left     : 0;
+    margin   : auto;
+
+}
+
+
+
+
+.luxuryBox {
+    max-width: 45.1rem;
+}
+
+.luxuryBox h1 {
+    font-size    : 3.2rem;
+    line-height  : 3.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.luxuryBox ul {
+    padding-top   : 3.2rem;
+    padding-bottom: .8rem;
+    border-bottom : none;
+}
+
+.luxuryBox .description {
+    font-size    : 1.8rem;
+    font-weight  : normal;
+    line-height  : 3.4rem;
+    color        : var(--gray1);
+    margin-bottom: 6.5rem;
+}
+
+
+.lookingCont {
+    background-color: var(--black);
+    border-radius   : 3.2rem;
+    padding         : 8.6rem 10.7rem;
+}
+
+.lookingContent {
+    max-width  : 45.1rem;
+    width      : 100%;
+    margin-left: auto;
+}
+
+
+.lookingContent h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size  : 6.4rem;
+    line-height: 7.2rem;
+    color      : var(--white);
+}
+
+.lookingContent p {
+    font-weight  : normal;
+    font-size    : 1.8rem;
+    line-height  : 3.4rem;
+    color        : var(--gray3);
+    margin-top   : 2.4rem;
+    margin-bottom: 5.6rem;
+}
+
+
+
+
+
+
+
+/* Testmonial Card */
+
+.testmonialCard {
+    border          : none;
+    border-radius   : 1.6rem;
+    background-color: var(--white);
+    padding         : 5rem 4rem;
+    max-width       : 45.3rem;
+    margin          : auto;
+}
+
+
+.quoteIcon {
+    width        : 4rem !important;
+    height       : 4rem;
+    display      : inline-block !important;
+    margin-bottom: 2.1rem;
+}
+
+
+.testmonialCard p {
+    font-weight   : normal;
+    font-size     : 1.8rem;
+    line-height   : 3.4rem;
+    color         : var(--gray1);
+    padding-bottom: 7.9rem;
+    border-bottom : .1rem solid var(--gray2);
+    margin-bottom : 4rem;
+}
+
+
+.testmonialUser {
+    display    : flex;
+    align-items: center;
+}
+
+.testmonialUser img {
+    height       : 6rem;
+    width        : 6rem;
+    border-radius: 50%;
+}
+
+.testmonialUser h5 {
+    font-weight   : bold;
+    font-size     : 2rem;
+    line-height   : 2.4rem;
+    color         : var(--black);
+    letter-spacing: -0.01em;
+    padding-left  : 1.2rem;
+    margin-bottom : .4rem;
+}
+
+.testmonialUser h6 {
+    font-weight : normal;
+    font-size   : 1.8rem;
+    line-height : 2.2rem;
+    color       : var(--gray1);
+    padding-left: 1.2rem;
+}
+
+
+
+
+
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+    position         : absolute;
+    top              : 48%;
+    transform        : translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.owl-nav .owl-next {
+    right       : -9rem;
+    display     : flex;
+    margin-right: 2%;
+    font-size   : 2.2rem !important;
+
+}
+
+.owl-nav .owl-prev {
+    left       : -9rem;
+    display    : flex;
+    margin-left: 2%;
+    font-size  : 2.2rem !important;
+}
+
+
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    border          : 2px solid #D5D5D5;
+    background-color: var(--sectionBg);
+    border-radius   : 50%;
+    display         : inline-block;
+    height          : 5rem;
+    width           : 5rem;
+    color           : #636363;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: var(--sectionBg);
+    border-color    : #D5D5D5;
+    color           : #636363;
+
+}
+
+
+@media (max-width: 1555.98px) {
+
+    .owl-nav .owl-next {
+        right: -3rem;
+    }
+
+    .owl-nav .owl-prev {
+        left: -3rem;
+    }
+}
+
+
+@media (max-width: 1432.98px) {
+
+    .owl-nav .owl-next {
+        right: 0rem;
+    }
+
+    .owl-nav .owl-prev {
+        left: 0rem;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .lookingContent {
+        margin    : auto;
+        text-align: center;
+    }
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+
+    .heroBox h1 {
+        font-size     : 5rem;
+        line-height   : 5.2rem;
+        padding-bottom: 2.4rem;
+
+    }
+
+
+    .lookingCont {
+        border-radius: 1.6rem;
+    }
+
+    .lookingContent h3 {
+        font-size  : 4.4rem;
+        line-height: 4.8rem;
+    }
+
+    .lookingContent {
+        padding: 3rem;
+    }
+
+    .lookingCont img {
+        max-width: 35rem;
+        margin   : auto;
+        display  : block;
+    }
+
+    .custom-container {
+        padding-top   : 4.8rem;
+        padding-bottom: 4.8rem;
+    }
+
+
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .lookingCont {
+        padding: 6.2rem 2.7rem 3.7rem 2.7rem;
+    }
+
+
+
+    .lookingContent button {
+        width: 100%;
+    }
+}

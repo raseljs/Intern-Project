@@ -1,0 +1,74 @@
+.search-content {
+    background-color   : #FCFCFC;
+    /* margin-top      : 19.6rem; */
+    margin-top         : 10.3rem;
+}
+
+.search-results {
+    max-width: 85.4rem;
+    min-width: 85.4rem;
+    width    : 100%;
+    margin   : 0 auto;
+    padding  : 4.8rem 13.9rem 0 6.4rem;
+}
+
+
+.resultTitle {
+    font-size    : 2.4rem;
+    line-height  : 3.6rem;
+    margin-bottom: 5.6rem;
+}
+
+.resultTitle span:first-child {
+    font-weight: normal;
+    color      : var(--gray4);
+}
+
+.resultTitle span:nth-child(2) {
+    font-weight: bold;
+    color      : var(--black);
+}
+
+.resultTitle span:last-child {
+    font-weight: normal;
+    color      : var(--black);
+}
+
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+    .search-results {
+        padding  : 5rem;
+        min-width: initial;
+
+    }
+
+
+
+}
+
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .search-results {
+        padding: 4rem;
+    }
+
+
+    /* .search-content {
+        padding-top: 1.6rem;
+    } */
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .search-results {
+        padding: 3rem;
+    }
+}
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}

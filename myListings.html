@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Listings | Bastu</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/myListings.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="autohide navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navbar-wraper">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.svg" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenuBar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img class="w-100" src="assets/images/hamburger.svg" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <hr class="dropdown-divider">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 divider">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="myListings.html">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myListings.html">Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0 ms-lg-5" href="post.html"><button type="button" class="btn btn-dark">post
+                                property <span class="free">Free</span></button></a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="package.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item divider">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0 ms-lg-5" href="javascript:void(0)"><button data-bs-toggle="modal"
+                                data-bs-target="#loginModal" type="button" class="btn btn-outline-dark">log
+                                in</button></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideMenuBar">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body sideNavbar">
+            <ul class="navbar-nav me-auto pb-5 divider">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="myListings.html">Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myListings.html">Rent</a>
+                </li>
+                <li class="nav-item sidebarPadding">
+                    <a class="nav-link p-0 ms-lg-5" href="post.html"><button type="button" class="btn btn-dark">post
+                            property <span class="free">Free</span></button></a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ms-auto mt-4">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="package.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item divider mb-5" style="padding-bottom: 2rem;">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link p-0 ms-lg-5" href="javascript:void(0)"><button data-bs-toggle="modal"
+                            data-bs-target="#loginModal" type="button" class="btn btn-outline-dark sideLoginBtn">log
+                            in</button></a>
+                </li>
+                <li class="nav-item userDropDown">
+                    <a class="nav-link userDropDownBtn" href="javascript:void(0)" role="button">
+                        <img class="navUserImg" src="assets/images/userImg.svg" alt="">
+
+                        <div class="navUserName">Sheehan Rahman <img src="assets/images/arrowDown.svg" alt=""></div>
+                    </a>
+                    <ul class="dropDownContent d-none">
+                        <li class="mobileMenu"><a class="dropdown-item activeLink" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111" fill-rule="evenodd"
+                                        d="M11.386 1.21a1 1 0 011.228 0l9 7A1 1 0 0122 9v11a3 3 0 01-3 3H5a3 3 0 01-3-3V9a1 1 0 01.386-.79l9-7zM4 9.49V20a1 1 0 001 1h14a1 1 0 001-1V9.49l-8-6.223-8 6.222z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#111" fill-rule="evenodd"
+                                        d="M8 12a1 1 0 011-1h6a1 1 0 011 1v10a1 1 0 11-2 0v-9h-4v9a1 1 0 11-2 0V12z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                My Listings
+                            </a></li>
+
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M15.71 12.71a6 6 0 10-7.42 0 10 10 0 00-6.22 8.18 1.006 1.006 0 102 .22 8 8 0 0115.9 0 1 1 0 001 .89h.11a1 1 0 00.88-1.1 10 10 0 00-6.25-8.19zM12 12a4 4 0 110-8 4 4 0 010 8z" />
+                                </svg>
+
+                                My Profile
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M12 13a1.2 1.2 0 00-.796.293.947.947 0 00-.329.707v3c0 .265.118.52.33.707A1.2 1.2 0 0012 18a1.2 1.2 0 00.796-.293.947.947 0 00.329-.707v-3a.947.947 0 00-.33-.707A1.2 1.2 0 0012 13zm5.625-4V7c0-1.326-.593-2.598-1.648-3.536C14.923 2.527 13.492 2 12 2s-2.923.527-3.977 1.464C6.968 4.402 6.375 5.674 6.375 7v2c-.895 0-1.754.316-2.386.879C3.356 10.44 3 11.204 3 12v7c0 .796.356 1.559.989 2.121.632.563 1.49.879 2.386.879h11.25c.895 0 1.754-.316 2.387-.879.632-.562.988-1.325.988-2.121v-7c0-.796-.356-1.559-.988-2.121C19.379 9.316 18.52 9 17.625 9zm-9-2c0-.796.356-1.559.989-2.121C10.246 4.316 11.104 4 12 4c.895 0 1.754.316 2.386.879.633.562.989 1.325.989 2.121v2h-6.75V7zM18.75 19c0 .265-.119.52-.33.707a1.2 1.2 0 01-.795.293H6.375a1.2 1.2 0 01-.795-.293.947.947 0 01-.33-.707v-7c0-.265.119-.52.33-.707A1.2 1.2 0 016.375 11h11.25a1.2 1.2 0 01.796.293c.21.187.329.442.329.707v7z" />
+                                </svg>
+
+                                Change Password
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M20 8.94a1.307 1.307 0 00-.06-.27v-.09a1.07 1.07 0 00-.19-.28l-6-6a1.071 1.071 0 00-.28-.19h-.09a.88.88 0 00-.33-.11H7a3 3 0 00-3 3v14a3 3 0 003 3h10a3 3 0 003-3V9v-.06zm-6-3.53L16.59 8H15a1 1 0 01-1-1V5.41zM18 19a1 1 0 01-1 1H7a1 1 0 01-1-1V5a1 1 0 011-1h5v3a3 3 0 003 3h3v9z" />
+                                </svg>
+
+                                Requested Packages
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M19 6.5h-3v-1a3 3 0 00-3-3h-2a3 3 0 00-3 3v1H5a3 3 0 00-3 3v9a3 3 0 003 3h14a3 3 0 003-3v-9a3 3 0 00-3-3zm-9-1a1 1 0 011-1h2a1 1 0 011 1v1h-4v-1zm10 13a1 1 0 01-1 1H5a1 1 0 01-1-1V13a21.71 21.71 0 008 1.53A21.75 21.75 0 0020 13v5.5zm0-7.69a19.89 19.89 0 01-16 0V9.5a1 1 0 011-1h14a1 1 0 011 1v1.31z" />
+                                </svg>
+
+                                Requested Services
+                            </a></li>
+
+                        <li class="mobileMenu"><a class="dropdown-item nestedMenuParent" href="javascript:void(0)"
+                                role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M7.5 6a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm13.62 4.71l-8.41-8.42A.999.999 0 0012 2H3a1 1 0 00-1 1v9a1 1 0 00.29.71l8.42 8.41a3 3 0 004.24 0L21.12 15a3 3 0 000-4.24v-.05zm-1.41 2.82l-6.18 6.17a1 1 0 01-1.41 0L4 11.59V4h7.59l8.12 8.12a1.001 1.001 0 010 1.41z" />
+                                </svg>
+
+                                Requested Properties
+
+                                <img src="assets/images/arrowDown.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="mobileMenu nestedMenu d-none"><a class="dropdown-item" href="#">
+                                Buy Requests
+                            </a>
+                        </li>
+                        <li class="mobileMenu nestedMenu d-none"><a class="dropdown-item" href="#">
+                                Rent Requests
+                            </a>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="#111"
+                                        d="M4 12a1 1 0 001 1h7.59l-2.3 2.29a1.002 1.002 0 00.325 1.639 1 1 0 001.095-.219l4-4a1 1 0 00.21-.33 1 1 0 000-.76 1 1 0 00-.21-.33l-4-4a1.003 1.003 0 10-1.42 1.42l2.3 2.29H5a1 1 0 00-1 1zM17 2H7a3 3 0 00-3 3v3a1 1 0 002 0V5a1 1 0 011-1h10a1 1 0 011 1v14a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 10-2 0v3a3 3 0 003 3h10a3 3 0 003-3V5a3 3 0 00-3-3z" />
+                                </svg>
+
+                                Log Out
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content authModalContent">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="sideImage">
+                            <img src="assets/images/modals/image 1.png" alt="">
+                            <div></div>
+                            <img class="modalLogoImg" src="assets/images/modals/bastu logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pt-5 pt-lg-0">
+                        <div class="rightContent">
+                            <h1>Welcome!</h1>
+                            <h6>Log In to your account</h6>
+
+                            <form action="#">
+
+                                <div class="row">
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="+8801883839298">
+                                            <label for="phoneNumber">Your Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-5">
+                                            <input type="password" class="form-control password" placeholder="password">
+                                            <label for="password">Your Password</label>
+                                            <span onclick="passwordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4 d-grid">
+                                        <button class="btn btn-dark">Log In</button>
+                                    </div>
+                                    <div class="col-lg-6 mb-4 d-grid">
+                                        <button class="btn p-1">forgot password?</button>
+                                    </div>
+
+
+                                    <div class="col-12 mt-5 mb-5 haveAccount">
+                                        <p>Don’t have any account?<span data-bs-toggle="modal"
+                                                data-bs-target="#signUpModal">Create one!</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <button class="modalClose" data-bs-toggle="modal">
+                    <img src="assets/images/modals/close icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content authModalContent">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="sideImage">
+                            <img src="assets/images/modals/image 2.png" alt="">
+                            <div></div>
+                            <img class="modalLogoImg" src="assets/images/modals/bastu logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pt-5 pt-lg-0">
+                        <div class="rightContent">
+                            <h1>Welcome!</h1>
+                            <h6>Create your account</h6>
+
+                            <form action="#">
+
+                                <div class="row">
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="demo name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" placeholder="+8801883839298">
+                                            <label for="phoneNumber">Your Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-4">
+                                            <input type="password" class="form-control password" placeholder="password">
+                                            <label for="password">Your Password</label>
+                                            <span onclick="passwordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 authFormInput">
+                                        <div class="form-floating mb-5">
+                                            <input type="password" class="form-control confirmPassword"
+                                                placeholder="password">
+                                            <label for="password">Confirm Password</label>
+                                            <span onclick="confirmPasswordShow()" class="passwordToglerBtn"><img
+                                                    src="assets/images/modals/eyeicon.svg" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mb-4 d-grid">
+                                        <button class="btn btn-dark">Sign up</button>
+                                    </div>
+
+
+
+                                    <div class="col-12 mt-5 mb-5 haveAccount">
+                                        <p>Already have an account? <span data-bs-toggle="modal"
+                                                data-bs-target="#loginModal">log IN!</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <button class="modalClose" data-bs-toggle="modal">
+                    <img src="assets/images/modals/close icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Main Content -->
+
+
+    <!-- Advance Search -->
+    <section class="container-fluid advacneSearchSticky" style="background-color: var(--white);    border-bottom: 1px solid var(--gray2);
+">
+        <form action="#">
+            <div class="advanceSearchCont">
+
+
+                <div class="search-box">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-md-8">
+                            <div class="advance-input">
+                                <input type="text" class="form-control" placeholder="Search for city, area, ZIP...">
+                                <img src="assets/images/home/fi_search.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-4 text-end">
+                            <button onclick="advanceFilterAction()" type="button" class="btn"><img
+                                    style="height: 2.8rem; width: 2.8rem;" src="assets/images/home/filter icon.svg"
+                                    alt=""></button>
+                            <button type="submit" class="btn btn-dark d-none d-md-inline-block">search</button>
+                        </div>
+                    </div>
+                    <div class="dropdownSearch d-none overflow-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="advanceSearchTitle">Advanced Search</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class=" col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="lookingto" class="form-select searchSelect">
+                                        <option selected>Buy</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="lookingto">Looking to</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="preferredCity" class="form-select searchSelect">
+                                        <option selected>All Cities</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="preferredCity">Preferred City</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="preferredArea" class="form-select searchSelect">
+                                        <option selected>All Areas</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="preferredArea">Preferred Area</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="propertyType" class="form-select searchSelect">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="propertyType">Property Type</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="propertySubType" class="form-select searchSelect">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="propertySubType">Property Sub-Type</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-2 authFormInput mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="propertyId" placeholder="propertyId">
+                                    <label for="propertyId">Property ID</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="Bedroooms" class="form-select searchSelect">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="Bedroooms">Bedroooms</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-2 filterSelect mb-4">
+                                <div class="form-floating formSearch">
+                                    <select id="Bathrooms" class="form-select searchSelect">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="Bathrooms">Bathrooms</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-4 col-lg-2 authFormInput mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="minSqft" placeholder="minSqft">
+                                    <label for="minSqft">Size (Min)- sqft.</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-2 authFormInput mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="maxSqft" placeholder="maxSqft">
+                                    <label for="maxSqft">Size (Max)- sqft.</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-2 authFormInput mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="minPrice" placeholder="minPrice">
+                                    <label for="minPrice">Price (Min)- BDT</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-2 authFormInput mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="maxPrice" placeholder="maxPrice">
+                                    <label for="maxPrice">Price (Max)- BDT</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-end">
+                                <button type="button" class="btn"><img
+                                        style="height: 2.4rem; width: 2.4rem; margin-top: -.3rem;"
+                                        src="assets/images/home/fi_plus-circle.svg" alt=""> clear filters</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </form>
+    </section>
+
+
+
+    <!-- Search Content -->
+    <section class="search-content d-flex">
+        <!-- Content -->
+        <div class="search-results">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="resultTitle"><span>Search Results:</span> <span>“Gulshan 1”</span> <span>( 8 Listings
+                            Available)</span></h6>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 mb-5">
+                    <a href="propertiesDetails.html">
+                        <div class="card  horizontalPropCard">
+                            <div class="row g-0">
+                                <div class="col-lg-5">
+                                    <img src="assets/images/home/property image 1.png" class="img-fluid rounded-start"
+                                        alt="...">
+
+                                    <!-- tag -->
+                                    <div class="propertyTag">
+                                        <span>verified</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="card-body propertyCardbody horizontalCardBody">
+                                        <h5 class="propertyId">ID: #BB635340</h5>
+                                        <div class="horizontalGps">
+                                            <div>
+                                                <h1>Luxurious Apartment</h1>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/home/gps_fixed.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p><img src="assets/images/home/location icon.svg" alt="">Gulshan 1, Dhaka</p>
+
+                                        <ul>
+                                            <li>4 Bed</li>
+                                            <li>5 Bath</li>
+                                            <li>2300 sqft.</li>
+                                        </ul>
+
+                                        <h6>For Sale</h6>
+                                        <h2>Tk. 2,00,00,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="gMap responsiveMap">
+            <!-- <div class="gMapTop" style="position: sticky; top: 27.6rem;"> -->
+            <div class="gMapTop" style="position: sticky; top: 21.6rem;">
+                <div id="propertyMap"></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="listViewBtn text-center">
+        <button onclick="toggleViewAction()" class="btnClass btn btn-dark">
+
+            <span class="map-viewBtn">
+                <img style="height: 2rem; width: 2rem; margin-top: -.5rem;" src="assets/images/home/map.svg" alt=""> Map
+                view
+            </span>
+            <span class="list-viewBtn d-none">
+                <img style="height: 2rem; width: 2rem; margin-top: -.5rem;"
+                    src="assets/images/home/format_list_bulleted.svg" alt=""> list view
+            </span>
+
+        </button>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap -->
+    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+
+
+    <!-- Map Js -->
+    <script>
+        function initMap() {
+
+
+            var $object = [
+                {
+                    "lat": 24.15,
+                    "lng": 88.59,
+                    "title": "Explicabo voluptates voluptatibus quas sed laborum minus quia.",
+                    'price': "30000",
+                },
+                {
+                    "lat": 24.37,
+                    "lng": 88.25,
+                    "title": "Repellat ea reiciendis quae dolores sit facilis ut.",
+                    'price': "20000",
+                },
+                {
+                    "lat": 24.07,
+                    "lng": 89.22,
+                    "title": "Perspiciatis voluptates consectetur nulla inventore illo debitis delectus alias.",
+                    'price': "20000",
+                },
+                {
+                    "lat": 24.10,
+                    "lng": 91.35,
+                    "title": "321 Mesa St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 22.45,
+                    "lng": 90.20,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 22.45,
+                    "lng": 90.35,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 22.19,
+                    "lng": 91.48,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 24.05,
+                    "lng": 91.00,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 23.28,
+                    "lng": 91.10,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 23.43,
+                    "lng": 90.26,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 24.25,
+                    "lng": 90.25,
+                    "title": "123 Main St",
+                    'price': "20000",
+                },
+                {
+                    "lat": 25.46,
+                    "lng": 89.42,
+                    "title": "123 Main St",
+                    'price': "60000",
+                },
+                {
+                    "lat": 22.20,
+                    "lng": 90.25,
+                    "title": "123 Main St",
+                    'price': "40000",
+                },
+                {
+                    "lat": 24.54,
+                    "lng": 91.52,
+                    "title": "123 Main St",
+                    'price': "70000",
+                },
+                {
+                    "lat": 25.42,
+                    "lng": 89.22,
+                    "title": "123 Main St",
+                    'price': "30000",
+                },
+                {
+                    "lat": 24.22,
+                    "lng": 89.0,
+                    "title": "123 Main St",
+                    'price': "230000",
+                },
+                {
+                    "lat": 23.40,
+                    "lng": 90.33,
+                    "title": "123 Main St",
+                    'price': "20500",
+                },
+                {
+                    "lat": 23.55,
+                    "lng": 89.05,
+                    "title": "123 Main St",
+                    'price': "25000",
+                },
+                {
+                    "lat": 22.25,
+                    "lng": 89.35,
+                    "title": "123 Main St",
+                    'price': "40400",
+                },
+                {
+                    "lat": 23.10,
+                    "lng": 89.10,
+                    "title": "123 Main St",
+                    'price': "80000",
+                },
+                {
+                    "lat": 24.52,
+                    "lng": 89.56,
+                    "title": "123 Main St",
+                    'price': "10000",
+                },
+                {
+                    "lat": 22.00,
+                    "lng": 89.58,
+                    "title": "123 Main St",
+                    'price': "40000",
+                },
+                {
+                    "lat": 21.26,
+                    "lng": 91.48,
+                    "title": "123 Main St",
+                    'price': "60000",
+                }
+            ];
+
+
+
+
+
+
+            /* ==========================================================================
+             Custom Maker
+             ========================================================================== */
+
+            const iconBase = 'assets/map-asset/images'
+
+
+            function CustomMarker(latlng, map, args) {
+                this.latlng = latlng;
+                this.args = args;
+                this.setMap(map);
+                this.map = map;
+            }
+
+            CustomMarker.prototype = new google.maps.OverlayView();
+
+            CustomMarker.prototype.draw = function () {
+                var self = this;
+
+                if (!this.div) {
+                    var div = document.createElement('div');
+
+                    div.className = 'marker';
+                    div.style.position = 'absolute';
+                    div.style.cursor = 'pointer';
+
+                    var span = document.createElement('span');
+                    span.innerHTML = `${self.args.price}`;
+
+                    // console.log(self);
+
+                    div.appendChild(span);
+
+                    var panes = this.getPanes();
+                    panes.overlayImage.appendChild(div);
+
+                    this.div = div;
+                }
+
+                var point = this.getProjection().fromLatLngToDivPixel(this.latlng);
+
+                if (point) {
+                    this.div.style.left = (point.x - 20) + 'px';
+                    this.div.style.top = (point.y - 20) + 'px';
+                }
+
+                google.maps.event.addDomListener(this.div, "click", function (event) {
+                    google.maps.event.trigger(self, "click");
+                });
+            };
+
+            CustomMarker.prototype.remove = function () {
+                if (this.div) {
+                    this.div.parentNode.removeChild(this.div);
+                    this.div = null;
+                }
+            };
+
+            CustomMarker.prototype.getPosition = function () {
+                return this.latlng;
+            };
+
+            CustomMarker.prototype.getDraggable = function () {
+                return false;
+            };
+
+            CustomMarker.prototype.setVisible = function (visible) {
+                if (this.div) {
+                    if (visible) {
+                        this.div.style.display = 'table';
+                        this.visible = true;
+                    }
+                    else {
+                        this.div.style.display = 'none';
+                        this.visible = false;
+                    }
+                }
+            };
+
+            CustomMarker.prototype.getVisible = function () {
+                return this.visible;
+            };
+
+            /* ==========================================================================
+             Google Maps
+             ========================================================================== */
+
+            var map = {
+                'map': '',
+
+                'markers': [],
+
+                'lat': 23.43,
+
+                'lng': 90.26,
+
+                'createMap': function () {
+                    this.map = new google.maps.Map(document.getElementById('propertyMap'), {
+                        center: { lat: this.lat, lng: this.lng },
+                        zoom: 6,
+                        maxZoom: 18,
+                    });
+
+                    this.createMarkers($object);
+                },
+
+                'createMarkers': function (response) {
+                    var self = this;
+
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: 'Loading'
+                    });
+
+                    var bounds = new google.maps.LatLngBounds();
+
+                    for (var n = 0; n < response.length; n++) {
+                        var el = response[n];
+
+                        var lat = parseFloat(el.lat);
+
+                        var lng = parseFloat(el.lng);
+
+                        var latLng = new google.maps.LatLng(lat, lng);
+
+                        var marker = new CustomMarker(latLng, this.map, {
+                            title: el.title,
+                            price: el.price,
+
+                        });
+
+                        this.markers.push(marker);
+
+
+
+
+
+                        bounds.extend(marker.getPosition());
+
+
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infoWindow.setContent('<b>' + this.args.title + '</b>');
+                            infoWindow.open(self.map, this);
+                            // self.map.panTo(this.getPosition());
+                            // self.map.setZoom(14);
+                        });
+
+                    }
+                },
+
+            };
+
+
+
+
+
+            google.maps.event.addDomListener(window, 'load', map.createMap());
+
+            // new MarkerClusterer(map.map, map.markers, {
+            //     imagePath: `${iconBase}/m`
+            // });
+
+        }
+
+
+    </script>
+
+
+    <!-- Google Map Js and API -->
+    <script src="assets/map-asset/markerClusterIndex.min.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKn1_1X4XxncG3EG-zHeClP-4z0n52JZY&callback=initMap&libraries=places">
+        </script>
+
+
+    <!-- Custom JS -->
+    <script src="assets/js/style.js"></script>
+
+
+    <script>
+        el_autohide = document.querySelector('.autohide');
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+
+
+        $(window).scroll(function () {
+
+            var scroll = $(window).scrollTop();
+
+            // console.log(scroll)
+
+            if (scroll > 100) {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+                $('.advacneSearchSticky').css({ "top": "0" })
+
+                $('.gMapTop').css({ 'top': '10.1rem' })
+                $("#propertyMap").css({ "height": "calc(100vh - 10.1rem)" })
+
+            } else {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+                $('.advacneSearchSticky').css({ "top": navbar_height + 'px' })
+
+                // $('.overflow-auto').css({'height':`calc(100vh- ${navbar_height})`})
+
+                $('.gMapTop').css({ 'top': '21.6rem' })
+                $("#propertyMap").css({ "height": "calc(100vh - 21.6rem)" })
+            }
+
+        });
+    </script>
+
+
+</body>
+
+</html>

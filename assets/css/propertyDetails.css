@@ -1,0 +1,652 @@
+.propertyNameAdd h6 {
+    font-weight  : normal;
+    font-size    : 2.4rem;
+    line-height  : 2.9rem;
+    color        : var(--black);
+    margin-bottom: 1.6rem;
+}
+
+.propertyNameAdd h6 img {
+    height      : 2.4rem;
+    width       : 2.4rem;
+    margin-top  : -.7rem;
+    margin-right: 1rem;
+}
+
+
+.propertyNameAdd h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size  : 4.8rem;
+    line-height: 3.6rem;
+    color      : var(--black);
+}
+
+
+.propId h6 {
+    font-style : italic;
+    font-weight: normal;
+    font-size  : 2rem;
+    line-height: 2.4rem;
+    color      : var(--black);
+}
+
+
+
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.mySwiper2 img {
+    border-radius: 1.2rem;
+}
+
+.mySwiper img {
+    border-radius: .8rem;
+}
+
+
+.mySwiper {
+    margin-top: .8rem;
+}
+
+.propDetails {
+    margin-top    : 8.7rem;
+    margin-bottom : 5.6rem;
+    padding-bottom: 1.6rem;
+
+}
+
+.infoHeader {
+    border-bottom: 1px solid var(--gray2);
+    margin-bottom: 3.2rem;
+
+}
+
+.propDetails ul {
+    padding-left: 0;
+}
+
+.propDetails ul li {
+    display     : inline-block;
+    font-weight : normal;
+    font-size   : 2.4rem;
+    line-height : 3.4rem;
+    color       : var(--black);
+    margin-right: 3rem;
+    position    : relative;
+}
+
+
+.propDetails ul li:last-child {
+    margin-right: 0;
+}
+
+.propDetails ul li span {
+    font-weight: bold;
+}
+
+
+
+.propDetails ul li::after {
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    bottom          : 0;
+    right           : -2rem;
+    margin          : auto;
+    height          : .6rem;
+    width           : .6rem;
+    border-radius   : 50%;
+    background-color: var(--black);
+}
+
+
+.propDetails ul li:last-child:after {
+    background-color: transparent;
+}
+
+.propButton button {
+    margin-right    : 2.4rem;
+    background-color: transparent;
+    border          : none;
+}
+
+.propButton button:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.propDetails p {
+    font-weight: normal;
+    font-size  : 1.8rem;
+    line-height: 3.4rem;
+    color      : var(--gray1);
+}
+
+
+.propertiesBox {
+    background-color: var(--white);
+    border          : 1px solid var(--gray2);
+    box-shadow      : 8px 12px 65px rgba(0, 0, 0, 0.05);
+    border-radius   : 1.6rem;
+    padding         : 4.8rem 5.6rem;
+    margin-bottom   : 2.4rem;
+}
+
+.propertiesBox h3 {
+    font-weight  : bold;
+    font-size    : 2rem;
+    line-height  : 3.4rem;
+    color        : var(--black);
+    margin-bottom: 3.2rem;
+}
+
+.propertiesBox h4 {
+    font-weight: bold;
+    font-size  : 2.4rem;
+    line-height: 2.9rem;
+    color      : var(--black);
+}
+
+.propertiesBox h6 {
+    font-weight: 500;
+    font-size  : 1.7rem;
+    line-height: 2.1rem;
+    color      : var(--gray1);
+}
+
+
+
+.propertiesBox ul li {
+    list-style-type: disc;
+    font-weight    : 500;
+    font-size      : 1.7rem;
+    line-height    : 2.1rem;
+    color          : var(--black);
+    margin-bottom  : 2.2rem;
+}
+
+
+.propertiesMapView {
+    margin-bottom: 6.4rem;
+}
+
+.propertiesMapView h2 {
+    font-weight  : bold;
+    font-size    : 2rem;
+    line-height  : 3.4rem;
+    color        : var(--black);
+    margin-bottom: 1.8rem;
+
+}
+
+
+#singlePropertyMap {
+    height       : 41.8rem;
+    width        : 100%;
+    border-radius: 1.6rem;
+}
+
+
+.leftInputbox {
+    border-right : 1px solid var(--gray2);
+    padding-right: 6rem;
+}
+
+.rightOutput {
+    padding-left: 6rem;
+}
+
+
+.calculatorOutput {
+    display        : flex;
+    justify-content: space-between;
+    margin-bottom  : 4rem;
+}
+
+.calculatorOutput:last-child {
+    margin-bottom: 0;
+}
+
+.calculatorOutput>div {
+    font-weight: normal;
+    font-size  : 1.7rem;
+    line-height: 2.1rem;
+}
+
+.calculatorOutput>div:first-child {
+    color: var(--black);
+}
+
+.calculatorOutput>div:last-child {
+    color: var(--gray4);
+
+}
+
+.wrapper-box {
+    display: none;
+}
+
+
+/* Rigth Side */
+
+.requestBox {
+    background-color: var(--white);
+    border          : 1px solid var(--gray2);
+    box-shadow      : 8px 12px 65px rgba(0, 0, 0, 0.05);
+    border-radius   : 1.6rem;
+    padding         : 4.3rem 4rem 3.3rem 4rem;
+    margin-bottom   : 2rem;
+
+}
+
+.requestBox h6 {
+    font-weight  : normal;
+    font-size    : 2rem;
+    line-height  : 2.4rem;
+    color        : var(--gray1);
+    margin-bottom: .6rem;
+}
+
+.requestBox h2 {
+    font-weight   : bold;
+    font-size     : 3.2rem;
+    line-height   : 3.9rem;
+    letter-spacing: -0.03em;
+    color         : var(--black);
+    margin-bottom : 4.3rem;
+}
+
+
+.requestBox button {
+    width: 100%;
+}
+
+
+.contact-info-box {
+    background-color: var(--white);
+    border          : 1px solid var(--gray2);
+    box-shadow      : 8px 12px 65px rgba(0, 0, 0, 0.05);
+    border-radius   : 1.6rem;
+    padding         : 4.2rem 4rem 0 4rem;
+    margin-bottom   : 2rem;
+}
+
+
+.user-info {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 3.2rem;
+}
+
+.user-info img {
+    height       : 8rem;
+    width        : 8rem;
+    border-radius: 50%;
+    margin-right : 1.2rem;
+}
+
+
+.user-info h5 {
+    font-weight   : bold;
+    font-size     : 2.2rem;
+    line-height   : 2.7rem;
+    letter-spacing: -0.01em;
+    color         : var(--black);
+    margin-bottom : .4rem;
+}
+
+.user-info h6 {
+    font-weight: normal;
+    font-size  : 1.8rem;
+    line-height: 2.2rem;
+    color      : var(--gray1);
+}
+
+
+.user-contact-info {
+    margin-bottom: 2.4rem;
+}
+
+.user-contact-info h6 {
+    font-weight  : 500;
+    font-size    : 1.5rem;
+    line-height  : 1.8rem;
+    color        : var(--gray1);
+    margin-bottom: .2rem;
+}
+
+.user-contact-info h5 {
+    font-weight: normal;
+    font-size  : 1.7rem;
+    line-height: 2.1rem;
+    color      : var(--black);
+}
+
+.showHideBtn img {
+    height     : 2.4rem;
+    width      : 2.4rem;
+    margin-left: 1rem;
+    margin-top : -.6rem;
+}
+
+
+.bastuContactBox {
+    background-color: var(--white);
+    border          : 1px solid var(--gray2);
+    box-shadow      : 8px 12px 65px rgba(0, 0, 0, 0.05);
+    border-radius   : 1.6rem;
+    padding         : 2.3rem 4rem;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+
+.bastuContactBox h1 {
+    font-weight   : bold;
+    font-size     : 1.8rem;
+    line-height   : 2.2rem;
+    text-transform: uppercase;
+    color         : var(--black);
+}
+
+
+.bastuContactBox a:first-child {
+    margin-left: 0;
+}
+
+.bastuContactBox a {
+    display    : inline-block;
+    margin-left: 1.6rem;
+}
+
+.bastuContactBox a img {
+    height: 4.4rem;
+    width : 4.4rem;
+}
+
+
+.propLeft {
+    padding-right: 4.5rem;
+}
+
+.propRight {
+    padding-left: 4.5rem;
+}
+
+
+
+
+
+@media (max-width: 350.98px) {
+
+
+
+    .propertiesBox {
+        padding: 2.8rem 3.6rem;
+    }
+
+}
+
+
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .propLeft {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .propRight {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        height      : initial !important;
+    }
+
+    .desktopBox {
+        display: none;
+    }
+
+    .wrapper-box {
+        display   : block;
+        position  : fixed;
+        bottom    : 0;
+        left      : 0;
+        right     : 0;
+        z-index   : 1045;
+        transition: all .5s;
+    }
+
+    .wrapper-box .requestBox {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        margin-bottom  : 0;
+        border-radius  : 0;
+
+
+    }
+
+    .wrapper-box .requestBox h2 {
+        margin-bottom: 0;
+    }
+
+    .propId h6 {
+        margin-top: 2.4rem;
+    }
+
+
+    .propButton {
+        padding-top   : 2.2rem;
+        padding-bottom: 1.8rem;
+    }
+
+
+}
+
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .leftInputbox {
+        border-right : none;
+        padding-right: 0;
+    }
+
+    .rightOutput {
+        padding-left: 0;
+        margin-top  : 4.3rem;
+        padding-top : 4.5rem;
+        border-top  : 1px solid var(--gray2);
+
+    }
+
+
+    .propertiesBox {
+        padding: 3.2rem;
+    }
+
+    .requestBox h6 {
+        font-size  : 1.6rem;
+        line-height: 1.9rem;
+    }
+
+    .requestBox h2 {
+        font-size  : 2rem;
+        line-height: 2.4rem;
+    }
+
+    .requestBox {
+        padding: 2.4rem;
+    }
+
+    .propertyNameAdd h6 {
+        font-size    : 1.8rem;
+        line-height  : 2.2rem;
+        margin-bottom: .4rem;
+    }
+
+    .propertyNameAdd h2 {
+        font-size  : 3rem;
+        line-height: 4.1rem;
+    }
+
+    .propId h6 {
+        font-size  : 1.6rem;
+        line-height: 1.9rem;
+    }
+
+    .propDetails ul li {
+        font-size: 2rem;
+    }
+
+    /* .mySwiper2 {
+        display: none;
+    } */
+
+
+    .propDetails {
+        margin-top: 4.8rem;
+    }
+
+    .propButton button img {
+        height: 2.4rem;
+        width : 2.4rem;
+    }
+
+}
+
+
+
+/* Compare Property Sticy */
+.compareBtnBox {
+    position     : fixed;
+    top          : 0;
+    bottom       : 0;
+    right        : -57px;
+    margin-top   : auto;
+    margin-bottom: auto;
+    height       : 64px;
+    width        : 175px;
+    background   : var(--black);
+    border-radius: 8px 8px 0px 0px;
+    padding      : 21px 24px;
+    border       : none;
+    transform    : rotate(-90deg);
+    z-index      : 19999999;
+}
+
+.compareBtnBox a {
+    font-weight   : bold;
+    font-size     : 18px;
+    line-height   : 22px;
+    text-transform: uppercase;
+    color         : #FFFFFF;
+}
+
+.compareBtnBox a img {
+    height: 24px;
+    width : 24px;
+}
+
+.countBx {
+    position: relative;
+}
+
+.countProp {
+    position      : absolute;
+    display       : inline-block;
+    font-weight   : bold;
+    font-size     : 15px;
+    line-height   : 18px;
+    text-transform: uppercase;
+    color         : #111111;
+    padding       : 5px;
+    background    : #FFFFFF;
+    border        : 2px solid #111111;
+    border-radius : 50%;
+    top           : -34px;
+    left          : 136px;
+    height        : 28px;
+    width         : 28px;
+    transform     : rotate(90deg);
+}
+
+.compareBtnBox a span {
+    margin-right: 5px;
+}
+
+.propertiesVideos {
+    width : 100%;
+    height: 394px;
+}
+
+@media (max-width: 1400px) {
+
+    .compareBtnBox {
+        padding: 17px 20px;
+        height : 60px;
+        width  : 171px;
+    }
+
+    .compareBtnBox a {
+        font-size  : 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .compareBtnBox {
+        padding: 13px 16px;
+        height : 56px;
+        width  : 167px;
+    }
+
+    .compareBtnBox a {
+        font-size  : 14px;
+        line-height: 18px;
+    }
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .compareBtnBox a span {
+        margin-right: 0px;
+        display     : none;
+    }
+
+    .compareBtnBox {
+        height: 48px;
+        width : 48px;
+    }
+
+    .compareBtnBox {
+        right: -1px;
+    }
+
+    .countProp {
+        left: 15px;
+        top : -25px;
+    }
+
+    .compareBtnBox a img {
+        margin-left: -6px;
+        margin-top : -3px;
+    }
+
+    .propertiesVideos {
+        height: 280px;
+    }
+}
+
+
+
+@media (max-width: 500.98px) {
+    .propertiesVideos {
+        height: 200px;
+    }
+}
